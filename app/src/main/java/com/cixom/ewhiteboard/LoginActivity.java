@@ -97,7 +97,7 @@ public class LoginActivity extends Activity {
     private OnClickListener mLoginListener = new View.OnClickListener() {
         public void onClick(View v){
 //          String name = "chenly12";
-//          String key = "chenly19940617";
+//          String key = "";
 
 			String name = mUsername.getText().toString();
 	        String key = mPassword.getText().toString();
