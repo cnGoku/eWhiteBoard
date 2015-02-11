@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cixom="http://schemas.android.com/apk/res/com.cixom.ewhiteboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <com.cixom.eWhiteBoard.gallery.GalleryFlow
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:spacing="0dip"
+        cixom:needTrans="false"
+        cixom:needZoom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnsURight</string>
+    <string name="settings">设置</string>
+    <string name="button1name">清空</string>
+    <string name="people_name">用户名</string>
+    <string name="button0name">保存</string>
+    <string name="openingText">有问题，就举手</string>
+    <string name="editButton">画笔:细</string>
+    <string name="shape2">形状:线段</string>
+    <string name="shape0">形状:手写</string>
+    <string name="shape1">形状:手写</string>
+    <string name="shape3">形状:圆形</string>
+    <string name="shape4">形状:方形</string>
+    <string name="shape5">形状:矩形</string>
+    <string name="shape6">形状:椭圆</string>
+    <string name="shapeButton">形状:手写</string>
+    <string name="eraserButton">橡皮擦</string>
+    <string name="colorButton">颜色:黑</string>
+    <string name="color_black">颜色:黑</string>
+    <string name="color_red">颜色:红</string>
+    <string name="color_blue">颜色:蓝</string>
+    <string name="color_green">颜色:绿</string>
+    <string name="color_yellow">颜色:黄</string>
+    <string name="edit1">绘图:细</string>
+    <string name="edit2">绘图:中</string>
+    <string name="edit3">绘图:粗</string>
+    <string name="eraser1">橡皮擦:小</string>
+    <string name="eraser2">橡皮擦:中</string>
+    <string name="eraser3">橡皮擦:大</string>
+    <string name="pictureButton">加载图片</string>
+    <string name="loginButtonString">登录</string>
+    <string name="forgetPasswordString">忘记密码？</string>
+    <string name="aboutUsString">关于我们</string>
+
+</resources>

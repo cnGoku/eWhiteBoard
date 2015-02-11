@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43bc6c" >
+    
+	<EditText
+        android:id="@+id/loginUsername"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:hint="Username/Email"
+        android:textColorHint="#AAAAAA"
+        android:background="#DDDDDD"
+        android:textColor="#424242"/>
+	
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_below="@id/loginUsername"
+        android:layout_marginTop="3dp"
+        android:hint="password"
+        android:textColorHint="#AAAAAA"
+        android:background="#DDDDDD"
+        android:textColor="#424242"/>
+    
+    <TextView
+        android:id="@+id/login_slogan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginUsername"
+        android:layout_marginBottom="15dp"
+        android:text="that answer your questions in study RIGHT and NOW"
+        android:textColor="@color/solid_white"/>
+    
+        <TextView
+        android:id="@+id/login_slogan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/login_slogan2"
+        android:layout_marginBottom="2dp"
+        android:text="Get connected to the brighteset mind"
+        android:textColor="@color/solid_white"/>
+    
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_slogan1"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo_opening"
+        android:layout_centerHorizontal="true" 
+        android:contentDescription="@string/app_name"/>       
+
+	
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/loginPassword"
+        android:layout_alignLeft="@id/loginPassword"
+        android:background="@drawable/login_button_selector"
+        android:text="Login"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/solid_white"/>
+    
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@id/loginPassword"
+        android:layout_below="@id/loginPassword"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:background="@drawable/register_button_selector"
+        android:text="Register"
+        android:textColor="@color/solid_white"/>
+    
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Forget password?"
+        android:textColor="@color/solid_white" />
+    
+   
+</RelativeLayout>

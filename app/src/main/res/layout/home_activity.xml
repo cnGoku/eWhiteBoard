@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#43bc6c" >
+
+    <RelativeLayout
+        android:id="@+id/personal_info"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal"
+        android:background="@drawable/personal_info_frame">
+
+        <ImageView
+            android:id="@+id/personal_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/people"
+            android:layout_marginTop="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/personal_name" />
+
+        <TextView
+            android:id="@+id/personal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="User name"
+            android:textColor="@color/solid_black"
+            android:layout_below="@+id/personal_pic"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/personal_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_history_frame"
+            android:layout_below="@id/personal_name"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/personal_time1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Time: "
+                android:textColor="@color/solid_black" />
+
+            <TextView
+                android:id="@+id/personal_time2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/personal_time1"
+                android:text="12 min"
+                android:textColor="@color/solid_black" />
+
+            <TextView
+                android:id="@+id/personal_credit1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_below="@id/personal_time1"
+                android:text="Credits: "
+                android:textColor="@color/solid_black" />
+
+            <TextView
+                android:id="@+id/personal_credit2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/personal_credit1"
+                android:layout_below="@id/personal_time2"
+                android:text="120"
+                android:textColor="@color/solid_black" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/personal_info"
+        android:gravity="center_horizontal"
+        android:background="#eee9bf">
+
+        <RelativeLayout
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:padding="15dp" >
+
+            <Button
+                android:id="@+id/personal_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button0"
+                android:background="@color/solid_white"
+                android:textColor="@color/solid_black"
+                android:padding="3dp"/>
+
+            <Button
+                android:id="@+id/teacher_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button1"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/personal_button"
+                android:background="@color/solid_white"
+                android:textColor="@color/solid_black"
+                android:padding="3dp"/>
+
+            <Button
+                android:id="@+id/socket_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button2"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/teacher_button"
+                android:background="@color/solid_white"
+                android:textColor="@color/solid_black"
+                android:padding="3dp"/>
+
+            <Button
+                android:id="@+id/personal_button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button3"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/socket_button"
+                android:background="@color/solid_white"
+                android:textColor="@color/solid_black"
+                android:padding="3dp"/>
+
+            <Button
+                android:id="@+id/personal_button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button4"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/personal_button3"
+                android:background="@color/solid_white"
+                android:textColor="@color/solid_black"
+                android:padding="3dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

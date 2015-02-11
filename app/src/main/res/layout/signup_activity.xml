@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43bc6c" >
+    
+	<EditText
+        android:id="@+id/SignName"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:hint="Username"
+        android:textColorHint="#AAAAAA"
+        android:background="#DDDDDD"
+        android:textColor="#424242"/>
+	
+    <EditText
+        android:id="@+id/SignPassword"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_below="@id/SignName"
+        android:layout_marginTop="3dp"
+        android:hint="password"
+        android:textColorHint="#AAAAAA"
+        android:background="#DDDDDD"
+        android:textColor="#424242"/>
+    
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_below="@id/SignPassword"
+        android:layout_marginTop="3dp"
+        android:hint="confirmpassword"
+        android:textColorHint="#AAAAAA"
+        android:background="#DDDDDD"
+        android:textColor="#424242"/>
+    
+    <EditText
+        android:id="@+id/SignEmail"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_below="@id/ConfirmPassword"
+        android:layout_marginTop="3dp"
+        android:hint="Email for signup"
+        android:textColorHint="#AAAAAA"
+        android:background="#DDDDDD"
+        android:textColor="#424242"/>
+    
+    <TextView
+        android:id="@+id/sign_slogan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/SignName"
+        android:layout_marginBottom="15dp"
+        android:text="that answer your questions in study RIGHT and NOW"
+        android:textColor="@color/solid_white"/>
+    
+    <TextView
+        android:id="@+id/sign_slogan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/sign_slogan2"
+        android:layout_marginBottom="2dp"
+        android:text="Get connected to the brighteset mind"
+        android:textColor="@color/solid_white"/>
+    
+    <ImageView
+        android:id="@+id/sign_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_slogan1"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo_opening"
+        android:layout_centerHorizontal="true" 
+        android:contentDescription="@string/app_name"/>       
+
+	
+    <Button
+        android:id="@+id/signButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/SignEmail"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button_selector"
+        android:text="sign"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/solid_white"/>
+    
+    <TextView
+        android:id="@+id/sign_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signButton"
+        android:layout_marginBottom="2dp"
+        android:text="already have an username? login now"
+        android:textColor="@color/solid_white"/>
+
+    
+   
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="solid_black">#ff000000</color>
+    <color name="solid_white">#ffffffff</color>
+    <color name="bg_blue">#FF1BA1E2</color>
+    <color name="toolbox_bg">#99aaaaaa</color>
+    <color name="solid_red">#f10707</color>
+    <color name="solid_blue">#3939fb</color>
+    <color name="solid_green">#43bc6c</color>
+    <color name="solid_yellow">#fde300</color>
+    <color name="dark_green1">#008B00</color>
+    <color name="dark_green2">#006900</color>
+
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/board_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:paddingBottom="10dip"
+            android:paddingRight="15dip"
+            android:shadowColor="#FFFAFA"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@id/container"
+            android:contentDescription="@string/app_name"
+            android:background="#000000"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:background="#43bc6c"  >
+        
+        <ImageView
+            android:id="@+id/undo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/page_selector"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/undo" />
+
+        <ImageView
+            android:id="@+id/redo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/page_selector"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/redo" />
+
+        <ImageView
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/divider_launcher_holo" />
+        
+
+        <ImageView
+            android:id="@+id/new_page"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/page_selector"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page_add" />
+
+        <ImageView
+            android:id="@+id/page"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/page_selector"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/page_preview" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="444dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/page_selector"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+    
+    <ImageView
+            android:id="@+id/loadPicture"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/tool_bar"
+            android:layout_alignTop="@id/tool_bar"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/toolbox_selector"
+            android:scaleType="fitXY"
+            android:padding="3dp"
+            android:src="@drawable/camera"/>
+    
+    <ImageView
+	        android:id="@+id/saveButton"
+	        android:layout_width="70dip"
+	        android:layout_height="40dip"
+	        android:layout_toRightOf="@id/loadPicture"
+	        android:background="@drawable/toolbox_selector"
+	        android:layout_alignTop="@id/tool_bar"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+	        android:padding="3dp"
+	        android:src="@drawable/save_1"/>
+        
+	<ImageView
+	        android:id="@+id/button1"
+	        android:layout_width="70dip"
+	        android:layout_height="40dip"
+	        android:layout_toRightOf="@id/saveButton"
+	        android:layout_alignTop="@id/tool_bar"
+            android:layout_marginTop="3dp"
+	        android:padding="3dp"
+	        android:layout_marginLeft="3dp"
+	        android:text="@string/button1name"
+	        android:background="@drawable/toolbox_selector"
+	        android:textSize="12sp"
+	        android:src="@drawable/recycle_bin" />
+
+    <ImageView
+            android:id="@+id/edit"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="3dip"
+            android:layout_alignTop="@id/tool_bar"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:layout_toRightOf="@id/button1"
+            android:background="@drawable/toolbox_selector"
+            android:text="@string/editButton"
+            android:textSize="12sp"
+            android:src="@drawable/thickness" />
+
+    <ImageView
+            android:id="@+id/shape"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/tool_bar"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/edit"
+            android:background="@drawable/toolbox_selector"
+            android:src="@drawable/pen"/>
+
+    <ImageView
+            android:id="@+id/eraser"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="3dip"
+            android:layout_alignTop="@id/tool_bar"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:layout_toRightOf="@id/shape"
+            android:background="@drawable/toolbox_selector"
+            android:src="@drawable/eraser" />
+            
+    <ImageView
+            android:id="@+id/color"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="3dip"
+            android:layout_alignTop="@id/tool_bar"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:layout_toRightOf="@id/eraser"
+            android:src="@drawable/color"
+            android:background="@color/solid_black"/>
+
+</RelativeLayout>
